@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    
+    title gaming website
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/contact") Contact]
+            li.animation
+
+    section#introSection
+        div Welcome To gaming World.
+        div.small Enchanced your gameplay
+
+    section#missionSection
+        h1 Battle royals
+            div.main
+                div.box
+                    div
+                        img(src="/static/bgmi.jpg")
+                    //- p bgmi
+                div.box
+                    div
+                        img(src="/static/freefire.jpg")
+                    //- p freefire
+                div.box
+                    div
+                        img(src="/static/cod.jpg")
+                    //- p cod
+    section#sponsorsSection
+        h1 Our Sponsors
+        div#sponsors
+            img(src="/static/logo1.jpg", alt="Sponsor image",class = "spimage")
+            img(src="/static/logo2.jpg", alt="Sponsor image",class = "spimage")
+            img(src="/static/logo3.jpg", alt="Sponsor image",class = "spimage")
+    footer#footer
+        div copyright @ 2021 Gaming-World.com  |All rights reserved
+        div Email - sumong483@gmail.com
+        div contact-9769480420
+    script
+      include ../static/index.js    

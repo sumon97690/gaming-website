@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    //- link(rel="stylesheet" media="screen and (max-width:740px)" href="../../static/response.css")
+    title gaming website
+    block scripts
+    block style
+  body 
+    nav#navbar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/contact") Contact]
+            li.animation
+    block content
+  footer
+    .column
+      h3 About Us
+      p
+        | A game world is a place of imagination and is usually placed in an alternate fictional universe and its aim is to immerse the player and make them feel as if they are in control of this gaming  world
+    .column
+      h3 Explore Us
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/about') About
+        li
+          a(href='/contact') Contact
+        li
+          a(href='/services') Services
+    .column
+      h3 Feedback
+      form(action="/contact", method = "post",class ="Myform")
+        input(type="text",class="Myinput",name = "desc", placeholder= "Feedback")
+        button(type='button') Upload
+  .bottom
+    p &copy; copyright 2022
